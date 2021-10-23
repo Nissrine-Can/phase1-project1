@@ -1,3 +1,195 @@
+* {box-sizing: border-box;}
 body {
-    background: rgb(206, 136, 196);
-  }
+    margin: 0;
+    background: url(https://wallpaperaccess.com/full/1692794.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    background-color: rgb(218, 188, 246);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+h1 {
+    padding-left: 30px;
+    font-size: 2.5rem;
+    opacity: .7;
+}
+
+h3 {
+    color:rgb(235, 111, 98);
+    font-size: 1.5rem;
+}
+
+#search-bar {
+   padding: 30px;
+   display: flex;
+   align-items: center;
+   width: 50%;
+}
+#search-bar input:hover {
+    background-color: #edb0b0;
+    color: #212121 ;
+}
+.input,
+.btn-search {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.input {
+    outline: none;
+}
+.btn-search {
+    opacity: .7;
+}
+
+
+section {
+    padding: 10px;
+    margin: 0;
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 1em;
+    
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.fav-column {
+    width: 20%;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.fav-ul {
+    font-size: 1.5rem;
+    list-style: none;
+    text-align: left;
+}
+.fav-li {
+    padding-left: 5px;
+}
+.delete-div {
+    display:flex;
+}
+.liDeleteBtn {
+    border-radius: 50%;
+    font-weight: bold;
+    border: none;
+    color:salmon;
+    cursor: pointer;
+}
+
+
+.card {
+    width: 90%;
+    background-color: rgb(245, 147, 136);
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card-img {
+    padding: 10px;
+    object-fit: cover;
+    flex-basis: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    min-width: 0;
+    min-height: 0;
+}
+.card-content {
+    padding: 1em;
+}
+.card-title,
+.card-author,
+.card-publisher {
+    margin: 6px;
+}
+.card-title {
+    margin: 0;
+}
+.card-author {
+    font-size: 1rem;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+
+}
+.preview-btn,
+.btn-like {
+   font-size: 1.15rem;
+   background-color: rgb(135, 126, 126);
+   color: black;
+   text-decoration: none;
+   font-weight: 700;
+   padding: .25em .8em;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.btn-like {
+    border: none;
+}
+.btn-like.active {
+    background-color: rgb(186, 89, 175);
+}
+
+@media (min-width: 600px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .card {
+        flex-direction: row;
+    }
+    .card-img {
+        height: 200px;
+        width: 40%;
+    }
+
+    .divContentFooter {
+        display: block;
+    }
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 380px;
+    
+    }
+    .card-title {
+        font-size: 1.7rem;
+    }
+    .card-author {
+        font-size: 1.5rem;
+        max-width: 500px;
+    }
+    .card-publisher {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .card-footer {
+        margin-top: auto;
+    }
+    .preview-btn {
+        margin-right: 10px;
+    }
+    
+}
+
